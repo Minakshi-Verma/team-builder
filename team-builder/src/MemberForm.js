@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 
 const MemberForm = (props) =>{
-    console.log(" I am member form props", props)
+    console.log(" I am memberform props", props)
 
     const [member, setMember] = useState({
         id: "",
@@ -12,10 +12,11 @@ const MemberForm = (props) =>{
         role: ""
 
     })
- //onchange handler to control inputs
+ //onChange handler to control inputs
     const handleChanges = e =>{
 setMember({ ...member, [e.target.name]:e.target.value});
-console.log(member)
+
+// console.log(member)
     };
 
     
@@ -23,7 +24,7 @@ console.log(member)
 
 const submitForm= e =>{
     e.preventDefault();
-    props.addNewMember(member);
+    props.addNewMember(member); //here member is the state from line7
     setMember({name: "", age: "", email: "", role:""})
 }
     return(

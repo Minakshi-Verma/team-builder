@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Members = (props) =>{
+const Member = (props) =>{
     console.log("I am member props", props)
 
 
@@ -17,4 +17,4 @@ const Members = (props) =>{
         </div>
     )
 }
-export default Members;
+export default Member;

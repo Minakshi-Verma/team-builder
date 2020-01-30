@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import MemberForm from './MemberForm';
-import Members from './Members';
+import Member from './Member';
 // import logo from './logo.svg';
 import './App.css';
 
@@ -11,7 +11,7 @@ function App() {
       id: 1,
     name: "Jack Hammer",
     age: 31,
-    email: "jack01@gmail.com",
+    email: "jackhammer01@gmail.com",
     role: "UI developer"
     },
     {
@@ -25,14 +25,14 @@ function App() {
       id: 3,
     name: "Jon Phillips",
     age: 32,
-    email: "phillips10@yahoo.com",
+    email: "phillips_phillips@yahoo.com",
     role: "Back-end engineer"
 
     },
     {
       name: "Alicia Siegal",
       age: 24,
-      email: "siegal_alicia@hotmail.com",
+      email: "siegal_alicia01@hotmail.com",
       role: "fullstack developer"
       }
     
@@ -44,7 +44,7 @@ function App() {
   const addNewMember = member =>{
     const newMember ={
       // id:Date.now(),
-      // id: member.id,
+      id: member.id, //React can use this id
       name: member.name,
       age: member.age,
       email: member.email,
@@ -59,7 +59,7 @@ function App() {
     <div className="App">
       <h1>My Team Members</h1>
       <MemberForm addNewMember= {addNewMember}/>
-      <Members members ={members}/>
+      <Member members ={members}/>
      
     </div>
   );
