@@ -65,7 +65,7 @@ h1{
  width: 25%;
  height: 25vh;
  font-size: 0.9rem;
-  border:2px #800000 solid;
+  border:2px white solid;
   margin: 0.7%;
   padding: 1%;
   background: linear-gradient(to bottom, #ffcccc 0%,pink 50%,white 50%,pink 50%,white 75%);
