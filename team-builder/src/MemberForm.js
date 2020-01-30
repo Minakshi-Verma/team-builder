@@ -27,9 +27,9 @@ const submitForm= e =>{
     setMember({name: "", age: "", email: "", role:""})
 }
     return(
-        <form onSubmit = {submitForm}>
-            <label htmlFor = "name">Name</label>
-            <input 
+        <form  class = "form" onSubmit = {submitForm}>
+            <label className ="label" htmlFor = "name">Name</label>
+            <input className = "input" 
             id = "name"
             type = "text"
             name = "name"
@@ -38,8 +38,8 @@ const submitForm= e =>{
             value ={member.name}
             />
 
-            <label htmlFor = "name">Age</label>
-            <input 
+            <label className ="label" htmlFor = "name">Age</label>
+            <input className = "input"  
             id = "age"
             type = "number"
             name = "age"
@@ -48,8 +48,8 @@ const submitForm= e =>{
             value ={member.age}
             />
 
-            <label htmlFor = "email">Email</label>
-            <input 
+            <label className ="label" htmlFor = "email">Email</label>
+            <input className = "input" 
             id = "email"
             type = "email"
             name = "email"
@@ -58,8 +58,8 @@ const submitForm= e =>{
             value ={member.email}
             />
 
-            <label htmlFor = "role">Role</label>
-            <input 
+            <label  className ="label"htmlFor = "role">Role</label>
+            <input className = "input" 
             id = "role"
             type = "text"
             name = "role"
@@ -67,7 +67,7 @@ const submitForm= e =>{
             placeholder = "role"
             value ={member.role}
             />
-            <button type ="submit">Add New Member</button>
+            <button  className = "button" type ="submit">Add New Member</button>
         </form>
     )
 }

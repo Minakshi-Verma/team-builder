@@ -29,15 +29,16 @@ function App() {
     role: "Back-end engineer"
 
     },
+    {
+      name: "Alicia Siegal",
+      age: 24,
+      email: "siegal_alicia@hotmail.com",
+      role: "fullstack developer"
+      }
     
   ])
 
-  // {
-  //   name: "Alicia Siegal",
-  //   age: 24,
-  //   email: "siegal_alicia@hotmail.com",
-  //   role: "fullstack developer"
-  //   }
+ 
 
   
   const addNewMember = member =>{

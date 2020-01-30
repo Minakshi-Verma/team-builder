@@ -5,10 +5,10 @@ const Members = (props) =>{
 
 
     return(
-        <div>
+        <div class= "membercards">
             {props.members.map(member=>(
-                <div member = {member}key = {member.id}>
-                <h3>Name: {member.name}</h3>
+                <div class= "membercard" member = {member}key = {member.id}>
+                <p><strong>Name:</strong> {member.name}</p>
                 <p><strong>Age:</strong>: {member.age}</p>
                 <p><strong>Email:</strong>: {member.email}</p>
                 <p><strong>Role:</strong> {member.role}</p> </div>
