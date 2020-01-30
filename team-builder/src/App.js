@@ -18,15 +18,15 @@ function App() {
       id:2,
     name: "Terry Mannings",
     age: 27,
-    email: "terryM@gmail.com",
-    role: "frontend engineer"
+    email: "terry_mannings@gmail.com",
+    role: "Front-end engineer"
     },
     {
       id: 3,
     name: "Jon Phillips",
     age: 32,
     email: "phillips10@yahoo.com",
-    role: "backend engineer"
+    role: "Back-end engineer"
 
     },
     
